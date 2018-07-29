@@ -99,13 +99,13 @@ footer {
 
 #code_container {
     text-align: center;
-    color: black;
+    color: whitesmoke;
     padding-left: 75px;
     padding-right: 75px;
 }
 
-#code_container p {
-    color: whitesmoke;
+.title {
+    color: black;
 }
 
 .composition_row_1 {
@@ -129,6 +129,7 @@ footer {
 
 .composition_titles {
     color: black;
+    font-size: 20pt;
 }
 
 .composition_descriptions {
@@ -181,8 +182,9 @@ button:hover {
 
 .description {
     text-align: center;
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 250px;
+    padding-right: 250px;
     padding-bottom: 0px;
     color: whitesmoke;
+    font-size: 15pt;
 }

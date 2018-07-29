@@ -26,70 +26,69 @@
             <div id="code_container">
                 <br>
                 <div class="description">
-                    <h3>Below you will find a variety of Python scripts that I have written for fun. Thanks to the wonders of <a href="https://trinket.io/" target="_blank">Trinket</a>, these scripts can actually be run and edited right here on this page! Simply click "Run" and follow the prompts on the terminal. If you encounter any bugs, or see ways in which these scripts might be improved, please shoot me an email at <a href="mailto:orvek.1@osu.edu">orvek.1@osu.edu</a>.</h3>
+                    <p>Below you will find a variety of Python scripts that I have written for fun. Thanks to the wonders of <a href="https://trinket.io/" target="_blank">Trinket</a>, these scripts can actually be run and edited right here on this page! Simply click "Run" and follow the prompts on the terminal. If you encounter any bugs, or see ways in which these scripts might be improved, please shoot me an email at <a href="mailto:orvek.1@osu.edu">orvek.1@osu.edu</a>.</p>
                 </div>
-                <br>
                 <div id="password_generator">
-                    <h1>Password Generator</h1>
+                    <h1 class="title">Password Generator</h1>
                     <p>This script allows you to generate random, highly secure passwords and save them for future reference. Due to the constraints of embedded Python code, saved passwords are erased after the program is quit. If you run the program locally on your own computer, however, Python's <a href="https://docs.python.org/3/library/pickle.html" target="_blank">Pickle</a> module can be used to save this data to a file and allow you to retrieve it later.</p>
                     <iframe src="https://trinket.io/embed/python3/b2658c6368?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="dice_roller">
-                    <h1>Dice Roller</h1>
+                    <h1 class="title">Dice Roller</h1>
                     <p>This is a simple dice rolling game. The user is asked to input the number of dice to be thrown (which we will call x) and the number of sides on each of these dice (which we will call y). The script then generates x random integers between one and y + 1 (so as to be inclusive) and saves these integers in an array. The array and the sum of all the integers in the array are then outputted to the user.</p>
                     <iframe src="https://trinket.io/embed/python3/3ad97a00f3?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="transposition">
-                    <h1>Transposition</h1>
+                    <h1 class="title">Transposition</h1>
                     <p>This is a pitch-class set transposer. The user provides a pitch-class set and a transposition value (n) between 0 and 11 (number of half steps) and the script returns the pitch-class set transposed n half steps heigher.</p>
                     <iframe src="https://trinket.io/embed/python3/ca54c9c97c?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="inversion">
-                    <h1>Inversion</h1>
+                    <h1 class="title">Inversion</h1>
                     <p>This is a pitch-class set inverter. The user provides a pitch-class set and an inversional axis between 0 and 11 and the script returns the pitch-class set inverted around the axis provided.</p>
                     <iframe src="https://trinket.io/embed/python3/d35b191c6f?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="interval_vector">
-                    <h1>Interval Vector</h1>
+                    <h1 class="title">Interval Vector</h1>
                     <p>This script finds the interval vector of any pitch-class set. The user provides a pitch-class set, and the script then measures the distance from every element in the pitch-class set to every element in the pitch-class set and tallies these results into six interval classes (where 1 and 11 half steps = IC1, 2 and 10 = IC2, etc.). The script then returns the total number of each interval class as an ordered sextuple where position one equals the number of times inverval class one occurs, position two equals the number of times interval class two occurs, etc.</p>
                    <iframe src="https://trinket.io/embed/python3/30e301c0cd?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="find_relation">
-                    <h1>Find Relation</h1>
+                    <h1 class="title">Find Relation</h1>
                     <p>This script uses the transposition, inversion, and interval vector scripts to see if two given pitch-class sets map onto each other under any transposition or inversion, or if they are Z-related (share the same interval vector).</p>
                     <iframe src="https://trinket.io/embed/python3/5df28dd215?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="degrees_of_symmetry">
-                    <h1>Degrees of Symmetry</h1>
+                    <h1 class="title">Degrees of Symmetry</h1>
                     <p>This script tallies the total number of transposition and inversion values at which a given pitch-class set maps onto itself and outputs these values as a ordered pair (transposition, inversion). The transposition value is always at least 1 because all pitch class-sets map unto themselves at T0.</p>
                     <iframe src="https://trinket.io/embed/python3/2e323a19ce?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="index_vector">
-                    <h1>Index Vector</h1>
+                    <h1 class="title">Index Vector</h1>
                     <p>This script calculates the number of pitch-classes that are held invariant at each inversional axis (0–11) and outputs this information as twelve values where the value at position one indicates the number of pitch classes held invariant around the axis of 0, the value at position two indicates the number of pitch classes held invariant around the axis of 1, etc. Any value that is equal to the cardinality of the given pitch-class set indicates an axis at which the pitch-class set will map onto itself.</p>
                     <iframe src="https://trinket.io/embed/python3/2b4e7fa53b?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="characteristic_function">
-                    <h1>Characteristic Function</h1>
+                    <h1 class="title">Characteristic Function</h1>
                     <p>This script looks through the given pitch-class set to see which of the twelve pitch classes are present. It outupts these results as a binary value (1 = present, 0 = absent) for each pitch class in the format: 0, 1, 2, etc.</p>
                     <iframe src="https://trinket.io/embed/python3/a1883ebd29?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <div id="interval_string">
-                    <h1>Interval String</h1>
+                    <h1 class="title">Interval String</h1>
                     <p>This script calculates the dsitance in half steps between each consecutive member of the given pitch-class set.</p>
                     <iframe src="https://trinket.io/embed/python3/a6a2b6c342?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
                 <br>
                 <div id="aural_skills_bookkeeping">
-                    <h1>Aural Skills Bookkeeping</h1>
+                    <h1 class="title">Aural Skills Bookkeeping</h1>
                     <p>This script can be used in an aural-skills class to take attendance, randomly choose students to perform rhythm and melodic exercises, and record students' scores for their performances. Once again, due to the constraints of embedded Python scripts, this information is simply printed to the terminal, but it can be modified to actually write to a file and retrieve this information when it is run locally.</p>
                     <iframe src="https://trinket.io/embed/python3/5c7c4377cf?runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
