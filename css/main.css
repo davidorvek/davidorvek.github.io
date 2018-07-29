@@ -188,3 +188,13 @@ button:hover {
     color: whitesmoke;
     font-size: 15pt;
 }
+
+#title_image {
+    max-width:85%;
+    height: auto;
+}
+
+#headshot {
+    max-width: 70%;
+    height: auto;
+}
