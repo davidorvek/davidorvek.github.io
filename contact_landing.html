@@ -12,12 +12,12 @@
                 $message = $_POST['message'];        
             ?>
             <?php
-                $email_from = 'davidorvek.github.io';
+                $email_from = 'davideo23@yahoo.com';
                 $email_subject = 'New Form Submission';
                 $email_body = 'You have received an email from $first_name $last_name.\nHere is the message:\n\n$message';
             ?>
             <?php
-                $to = 'davideo23@yahoo.com';
+                $to = 'orvek.1@osu.edu';
                 $headers = 'From: $email_from \r\n';
                 $headers = 'Reply To: $email \r\n';
                 mail($to,$email_subject,$email_body,$headers)
