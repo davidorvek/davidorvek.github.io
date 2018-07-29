@@ -1,0 +1,188 @@
+body {
+    background: url("/pictures/stone_background.jpg");
+    background-size: cover;
+    font-family: 'Aldrich';
+}
+
+#coding_body {
+    background: url("/pictures/stone_background.jpg");
+    background-size: 100%;
+    font-family: 'Aldrich';
+}
+
+header {
+    text-align: center;
+    font-family: 'Aldrich';
+    color: whitesmoke;
+}
+
+#name {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20pt;
+}
+
+#name:hover {
+    color: black;
+}
+
+nav li {
+    display: inline;
+    padding: 30px;
+    font-size: 15pt;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: darkgrey;
+}
+
+.container {
+    text-align: center;
+}
+
+.text {
+    color: whitesmoke;
+    position: absolute;
+    top: 58%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#about {
+    text-align: center;
+    color: black;
+    font-size: 18pt;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% 30%;
+    grid-column-gap: 10px;
+    justify-content: center;
+}
+
+.bio {
+    text-align: right;
+    color: whitesmoke;
+}
+
+.bio a {
+    color: whitesmoke;
+}
+
+.featured {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 50px;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.featured p {
+    color: whitesmoke;
+}
+
+footer {
+    text-align: center;
+    font-size: 8pt;
+    color: whitesmoke;
+}
+
+#code_container {
+    text-align: center;
+    color: black;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+#code_container p {
+    color: whitesmoke;
+}
+
+.composition_row_1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 50px;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.composition_row_2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25%;
+    grid-column-gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.composition_titles {
+    color: black;
+}
+
+.composition_descriptions {
+    color: whitesmoke;
+}
+
+#cv_container {
+    text-align: center;
+}
+
+.paper_holder {
+    text-align: center;
+    color: whitesmoke;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.paper_holder a {
+    color: black;
+}
+
+.form_container {
+    text-align: center;
+}
+
+label {
+    font-size: 10pt;
+}
+
+input, textarea, button {
+    border: 2px solid black;
+}
+
+*:focus {
+    outline: none;
+}
+
+input:focus, textarea:focus, button:focus {
+    background-color: darkgrey;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+
+#in_progress {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 0px;
+    color: whitesmoke;
+}
