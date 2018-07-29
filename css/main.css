@@ -47,8 +47,8 @@ nav a:hover {
 }
 
 .text {
-    color: whitesmoke;
     position: absolute;
+    color: whitesmoke;
     top: 58%;
     left: 35%;
     transform: translate(-50%, -50%);
