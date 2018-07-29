@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>David Orvek</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+        <script>// key/value pairs for titles of papers and their file paths
+        var papers = {"Serialism in Three Chamber Works of Reginald Smith Brindle": "/papers/brindle.pdf", "Ex Nihilo: An Inquiry into the Nature of Musical Composition": "/papers/ex_nihilo.pdf", "Sonata Form in the First Movement of Edvard Grieg's String Quartet in G Minor, Op. 27": "/papers/grieg_string_quartet.pdf", "The Visualization of Tonality Through Color in the Animations of Stephen Malinowski": "/papers/stephen_malinowski.pdf", "Exploring Cohn's Sum-Class System Through Charles Villiers Stanford's <em>La belle Dame sans merci</em>": "/papers/sum_class.pdf", "Form Generating Elements in Anton Webern's String Quartet (1905)": "/papers/webern_string_quartet.pdf"};
+
+        // array of paper titles
+        var paperTitles = ["Serialism in Three Chamber Works of Reginald Smith Brindle", "Ex Nihilo: An Inquiry into the Nature of Musical Composition", "Sonata Form in the First Movement of Edvard Grieg's String Quartet in G Minor, Op. 27", "The Visualization of Tonality Through Color in the Animations of Stephen Malinowski", "Exploring Cohn's Sum-Class System Through Charles Villiers Stanford's <em>La belle Dame sans merci</em>", "Form Generating Elements in Anton Webern's String Quartet (1905)"];
+
+        // generates random title
+        var randomPaperTitle = paperTitles[Math.floor(Math.random() * 6 )];
+
+        // uses randomly generated title to retrieve that title's file path
+        var randomPaperPath = papers[randomPaperTitle];
+        </script>
+        <script>// key/value pairs for titles of compositions and their file paths
+            var compositions = {"String Trio in D First Movement": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/235801481&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Short and Suite": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470534268&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Mabel Wood Hall": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/262500660&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Call to Prayer and Response": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/247260425&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Portrait": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/205500715&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"};
+            
+            // array of composition titles
+            var compositionTitles = ["String Trio in D First Movement", "Short and Suite", "Mabel Wood Hall", "Call to Prayer and Response", "Portrait"];
+            
+            // generates random title
+            var randomCompositionTitle = compositionTitles[Math.floor(Math.random() * 5 )];
+            
+            // uses randomly gerenerated title to retrieve that title's file path
+            var randomCompositionPath = compositions[randomCompositionTitle];
+        </script>
+        <script>// key/value paris for titles of programs and their file paths
+            var programs = {"Aural Skills Bookkeeping": "coding.html#aural_skills_bookkeeping", "Characteristic Function": "coding.html#characteristic_function", "Degrees of Symmetry": "coding.html#degrees_of_symmetry", "Dice Roller": "coding.html#dice_roller", "Index Vector": "coding.html#index_vector", "Interval String": "coding.html#interval_string", "Interval Vector": "coding.html#interval_vector", "Inversion": "coding.html#inversion", "Transposition": "coding.html#transposition", "Find Relation": "coding.html#find_relation", "Password Generator": "coding.html#password_generator"};
+            
+            // array of program titles
+            var programTitles = ["Aural Skills Bookkeeping", "Characteristic Function", "Degrees of Symmetry", "Dice Roller", "Index Vector", "Interval String", "Interval Vector", "Inversion", "Transposition", "Find Relation", "Password Generator"];
+            
+            // generates random title
+            var randomProgramTitle = programTitles[Math.floor(Math.random() * 11)];
+            
+            // uses randomly generated title to retrieve that title's file path
+            var randomProgramPath = programs[randomProgramTitle];
+        </script>
+    </head>
+    <body>
+        <header>
+            <div><a id="name" href="index.html"><h1>David Orvek</h1></a></div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><em>Home</em></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="composition.html">Composition</a></li>
+                        <li><a href="coding.html">Coding</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr color="whitesmoke">
+        <main>
+            <section>
+                <div class="container">
+                    <img src="/pictures/_DSC9415.jpg" height="550px">
+                    <div class="text">
+                        <h1>David Orvek</h1>
+                        <h4>Music Theorist, Guitarist, Composer</h4>
+                    </div>
+                </div>
+            </section>
+            <hr color="whitesmoke">
+            <section>
+                <div id="about"><h2>About</h2></div>
+                <div class="grid">
+                    <div class="bio"><p>David Orvek is a music theorist, pedagogue, guitarist, and composer in Columbus, Ohio. He graduated with a bachelor's degree in music theory and literature from Southern Adventist University in 2016, and is currently an MA student in music theory and a graduate teaching associate at The Ohio State University where he teaches first-year music theory and aural skills. His research focuses largely on post-tonal and atonal musics, with a particular interest in transformational theory. Current projects include a study of non-tonal triadic progressions in the music of Charles Villiers Stanford and a corpus study of closural features in the atonal music of Schoenberg, Webern, and Berg.</p><p>In addition to his musical interests, David is also an amateur computer programmer with experience in Python, Bash, Ruby, JavaScript, HTML, CSS, and the Humdrum Toolkit. This website was built from scratch using HTML, CSS, and JavaScript.</p><h4><a href="/CV.pdf" download>Full CV</a></h4>
+                    </div>
+                    <div class="image"><p><img src="/pictures/_DSC9706%20copy.jpg" height="375px"></p></div>
+                </div>
+            </section>
+            <section>
+                <hr color="whitesmoke">
+                <div class="featured">
+                    <div class="research">
+                        <h2>Featured Paper</h2>
+                        <p id="random_paper"></p>
+                        <a id="random_paper_path" download><img src="/pictures/paper.jpg" width="100%" height="300"></a>
+                        <script>document.getElementById("random_paper").innerHTML = randomPaperTitle;</script><script>document.getElementById("random_paper_path").setAttribute("href", randomPaperPath);</script>
+                    </div>
+                    <div class="composition">
+                        <h2>Featured Composition</h2>
+                        <p id="random_composition"></p>
+                        <br>
+                        <iframe id="random_composition_path" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"></iframe>
+                        <script>document.getElementById("random_composition").innerHTML = randomCompositionTitle;</script><script>document.getElementById("random_composition_path").setAttribute("src", randomCompositionPath);</script>
+                    </div>
+                    <div class="coding">
+                        <h2>Featured Program</h2>
+                        <p id="random_program"></p>
+                        <br>
+                        <a id="random_program_path"><img src="/pictures/coding.png" width="100%" height="300px"></a>
+                        <script>document.getElementById("random_program").innerHTML = randomProgramTitle;</script>
+                        <script>document.getElementById("random_program_path").setAttribute("href", randomProgramPath);</script>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <br>
+            <section>
+                <footer>
+                    <p>&copy; David Orvek 2018 | <a href="mailto:orvek.1@osu.edu">orvek.1@osu.edu</a></p><a href="https://www.linkedin.com/in/david-orvek-590b72132" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png" target="_blank" width="25px" height="25px"/></a><a href="https://twitter.com/DavidOrvek" target="_blank"><img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" target="_blank" width="25px" height="25px"/></a><iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fdavid-orvek&color=orange_white&size=24" target="_blank" style="width: 25px; height: 25px;"></iframe>
+                </footer>
+            </section>
+    </body>
+</html>
