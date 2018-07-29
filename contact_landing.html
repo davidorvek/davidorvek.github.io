@@ -4,23 +4,6 @@
         <title>David Orvek | Thank You!</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-        <?php
-            $first_name = $_GET['first_name'];
-            $last_name = $_GET['last_name'];
-            $email = $_GET['email'];
-            $message = $_GET['message'];        
-        ?>
-        <?php
-            $email_from = 'davideo23@yahoo.com';
-            $email_subject = 'New Form Submission';
-            $email_body = 'You have received an email from $first_name $last_name.\nHere is the message:\n\n$message';
-        ?>
-        <?php
-            $to = 'orvek.1@osu.edu';
-            $headers = 'From: $email_from \r\n';
-            $headers = 'Reply To: $email \r\n';
-            mail($to,$email_subject,$email_body,$headers)
-        ?>
     </head>
     <body>
         <header>
