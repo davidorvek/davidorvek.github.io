@@ -44,9 +44,10 @@ nav a:hover {
 
 .container {
     text-align: center;
+    position: relative;
 }
 
-.text {
+#logo {
     position: absolute;
     color: whitesmoke;
     top: 58%;
@@ -140,6 +141,11 @@ footer {
     text-align: center;
 }
 
+embed {
+    width: 70%;
+    height: 900px;
+}
+
 .paper_holder {
     text-align: center;
     color: whitesmoke;
@@ -198,3 +204,26 @@ button:hover {
     max-width: 70%;
     height: auto;
 }
+
+@media screen and (min-width: 320px) and (max-width: 940px) {
+    
+    header {
+        position: relative;
+    }
+    
+    #name {    
+        font-size: 10pt;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    nav li {
+        font-size: 10pt;
+        display: table;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+
