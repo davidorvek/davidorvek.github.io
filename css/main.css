@@ -215,7 +215,7 @@ button:hover {
         font-size: 10pt;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 70%;
         transform: translate(-50%, -50%);
     }
     nav li {
