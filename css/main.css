@@ -69,12 +69,12 @@ nav a:hover {
     justify-content: center;
 }
 
-.bio {
+#bio {
     text-align: right;
     color: whitesmoke;
 }
 
-.bio a {
+#bio a {
     color: whitesmoke;
 }
 
@@ -201,11 +201,104 @@ button:hover {
 }
 
 #headshot {
-    max-width: 70%;
+    max-width: 90%;
     height: auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 940px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+    
+    header {
+        position: relative;
+    }
+    
+    #name {    
+        font-size: 15pt;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    nav li {
+        font-size: 15pt;
+        display: table;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    #logo h2 {
+        font-size: 10pt;
+    }
+    
+    #logo h4 {
+        font-size: 8pt;
+    }
+    
+    #about {
+        font-size: 12pt;
+    }
+    
+    .grid {
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 10px;
+    }
+    
+    #bio {
+        font-size: 10pt;
+    }
+    
+    .featured {
+        display: block;
+        width: 75%;
+        text-align: right;
+        align-content: center;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 749px) {
+    
+    header {
+        position: relative;
+    }
+    
+    #name {    
+        font-size: 12pt;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    nav li {
+        font-size: 12pt;
+        display: table;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+        #logo h2 {
+        font-size: 9pt;
+    }
+    
+    #logo h4 {
+        font-size: 7pt;
+    }
+    
+    #about {
+        font-size: 10pt;
+    }
+    
+    #bio {
+        font-size: 8pt;
+    }
+    
+    .grid {
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 9px;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 499px) {
     
     header {
         position: relative;
@@ -215,7 +308,7 @@ button:hover {
         font-size: 10pt;
         position: absolute;
         top: 50%;
-        left: 70%;
+        left: 65%;
         transform: translate(-50%, -50%);
     }
     nav li {
@@ -224,6 +317,26 @@ button:hover {
         padding-top: 3px;
         padding-bottom: 3px;
     }
+    
+        #logo h2 {
+        font-size: 8pt;
+    }
+    
+    #logo h4 {
+        font-size: 6pt;
+    }
+    
+    #about {
+        font-size: 9pt;
+    }
+    
+    #bio {
+        font-size: 7pt;
+    }
+    
+    .grid {
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 8px;
+    }
 }
-
 
