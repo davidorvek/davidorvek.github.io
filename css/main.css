@@ -222,37 +222,41 @@ button:hover {
     nav li {
         font-size: 15pt;
         display: table;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
     
     #logo h2 {
-        font-size: 10pt;
-    }
-    
-    #logo h4 {
-        font-size: 8pt;
-    }
-    
-    #about {
         font-size: 12pt;
     }
     
+    #logo h4 {
+        font-size: 10pt;
+    }
+    
+    #about {
+        font-size: 13pt;
+    }
+    
     .grid {
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 42.5% 42.5%;
     grid-column-gap: 10px;
     }
     
     #bio {
-        font-size: 10pt;
+        font-size: 11pt;
     }
     
     .featured {
         display: block;
-        width: 75%;
-        text-align: right;
-        align-content: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
         color: black;
+    }
+    
+    .featured p {
+        font-size: 11pt;
     }
 }
 
