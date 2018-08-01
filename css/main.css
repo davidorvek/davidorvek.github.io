@@ -113,23 +113,10 @@ footer {
     color: black;
 }
 
-.composition_row_1 {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 25% 25% 25%;
-    grid-column-gap: 50px;
-    justify-content: center;
+#composition_holder {
     text-align: center;
-    color: black;
-}
-
-.composition_row_2 {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 25% 25%;
-    grid-column-gap: 50px;
-    justify-content: center;
-    text-align: center;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 .composition_titles {
@@ -188,9 +175,6 @@ button:hover {
 
 .description {
     text-align: center;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-bottom: 0px;
     color: whitesmoke;
     font-size: 15pt;
 }
