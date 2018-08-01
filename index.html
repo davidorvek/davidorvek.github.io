@@ -4,42 +4,7 @@
         <title>David Orvek</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-        <script>// key/value pairs for titles of papers and their file paths
-        var papers = {"Serialism in Three Chamber Works of Reginald Smith Brindle": "/papers/brindle.pdf", "Ex Nihilo: An Inquiry into the Nature of Musical Composition": "/papers/ex_nihilo.pdf", "Sonata Form in the First Movement of Edvard Grieg's String Quartet in G Minor, Op. 27": "/papers/grieg_string_quartet.pdf", "The Visualization of Tonality Through Color in the Animations of Stephen Malinowski": "/papers/stephen_malinowski.pdf", "Exploring Cohn's Sum-Class System Through Charles Villiers Stanford's <em>La belle Dame sans merci</em>": "/papers/sum_class.pdf", "Form Generating Elements in Anton Webern's String Quartet (1905)": "/papers/webern_string_quartet.pdf"};
-
-        // array of paper titles
-        var paperTitles = ["Serialism in Three Chamber Works of Reginald Smith Brindle", "Ex Nihilo: An Inquiry into the Nature of Musical Composition", "Sonata Form in the First Movement of Edvard Grieg's String Quartet in G Minor, Op. 27", "The Visualization of Tonality Through Color in the Animations of Stephen Malinowski", "Exploring Cohn's Sum-Class System Through Charles Villiers Stanford's <em>La belle Dame sans merci</em>", "Form Generating Elements in Anton Webern's String Quartet (1905)"];
-
-        // generates random title
-        var randomPaperTitle = paperTitles[Math.floor(Math.random() * 6 )];
-
-        // uses randomly generated title to retrieve that title's file path
-        var randomPaperPath = papers[randomPaperTitle];
-        </script>
-        <script>// key/value pairs for titles of compositions and their file paths
-            var compositions = {"String Trio in D First Movement": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/235801481&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Short and Suite": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470534268&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Mabel Wood Hall": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/262500660&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Call to Prayer and Response": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/247260425&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", "Portrait": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/205500715&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"};
-            
-            // array of composition titles
-            var compositionTitles = ["String Trio in D First Movement", "Short and Suite", "Mabel Wood Hall", "Call to Prayer and Response", "Portrait"];
-            
-            // generates random title
-            var randomCompositionTitle = compositionTitles[Math.floor(Math.random() * 5 )];
-            
-            // uses randomly gerenerated title to retrieve that title's file path
-            var randomCompositionPath = compositions[randomCompositionTitle];
-        </script>
-        <script>// key/value paris for titles of programs and their file paths
-            var programs = {"Aural Skills Bookkeeping": "coding.html#aural_skills_bookkeeping", "Characteristic Function": "coding.html#characteristic_function", "Degrees of Symmetry": "coding.html#degrees_of_symmetry", "Dice Roller": "coding.html#dice_roller", "Index Vector": "coding.html#index_vector", "Interval String": "coding.html#interval_string", "Interval Vector": "coding.html#interval_vector", "Inversion": "coding.html#inversion", "Transposition": "coding.html#transposition", "Find Relation": "coding.html#find_relation", "Password Generator": "coding.html#password_generator"};
-            
-            // array of program titles
-            var programTitles = ["Aural Skills Bookkeeping", "Characteristic Function", "Degrees of Symmetry", "Dice Roller", "Index Vector", "Interval String", "Interval Vector", "Inversion", "Transposition", "Find Relation", "Password Generator"];
-            
-            // generates random title
-            var randomProgramTitle = programTitles[Math.floor(Math.random() * 11)];
-            
-            // uses randomly generated title to retrieve that title's file path
-            var randomProgramPath = programs[randomProgramTitle];
-        </script>
+        <script src="/js/randomizer.js"></script>
     </head>
     <body>
         <header>
@@ -54,13 +19,7 @@
                         <li><a id="cv">CV</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                    <script>if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-                            document.getElementById("cv").setAttribute("href", "/CV.pdf");
-                            document.getElementById("cv").setAttribute("download"); 
-                        } else {
-                            document.getElementById("cv").setAttribute("href", "cv.html");
-                        }
-                    </script>
+                    <script src="/js/check_for_mobile.js"></script>
                 </nav>
             </div>
         </header>
@@ -81,29 +40,45 @@
                 <div class="grid">
                     <div id="bio"><p>David Orvek is a music theorist, pedagogue, guitarist, and composer in Columbus, Ohio. He graduated with a bachelor's degree in music theory and literature from Southern Adventist University in 2016, and is currently an MA student in music theory and a graduate teaching associate at The Ohio State University where he teaches first-year music theory and aural skills. His research focuses largely on post-tonal and atonal musics, with a particular interest in transformational theory. Current projects include a study of non-tonal triadic progressions in the music of Charles Villiers Stanford and a corpus study of closural features in the atonal music of Schoenberg, Webern, and Berg.</p><p>In addition to his musical interests, David is also an amateur computer programmer with experience in Python, Bash, Ruby, JavaScript, HTML, CSS, and the Humdrum Toolkit. This website was built from scratch using HTML, CSS, and JavaScript.</p><p><a href="/CV.pdf" download>Full CV</a></p>
                     </div>
-                    <div><p><img id="headshot" src="/pictures/DSC9706.jpg" alt="David Orvek headshot"></p></div>
+                    <div><img id="headshot" src="/pictures/DSC9706.jpg" alt="David Orvek headshot"></div>
                 </div>
+                <br>
             </section>
             <section>
                 <hr color="whitesmoke">
+                <br>
                 <div class="featured">
-                    <div class="research">
-                        <h1>Featured Paper</h1>
-                        <p id="random_paper"></p>
-                        <a id="random_paper_path" download><img width="auto" height="300px" src="/pictures/paper.jpg" alt="A page of a paper"></a>
-                        <script>document.getElementById("random_paper").innerHTML = randomPaperTitle;</script><script>document.getElementById("random_paper_path").setAttribute("href", randomPaperPath);</script>
+                    <div id="research">
+                        <h1 id="random_paper_title"></h1>
+                        <p id="random_paper_blurb"></p>
+                        <p><a id="random_paper_path">Continue reading</a></p>
+                        <script>
+                            document.getElementById("random_paper_title").innerHTML = randomPaperTitle;
+                            document.getElementById("random_paper_blurb").innerHTML = randomPaperBlurb;
+                            document.getElementById("random_paper_path").setAttribute("href", randomPaperPath);
+                        </script>
                     </div>
-                    <div class="composition">
-                        <h1>Featured Composition</h1>
-                        <p id="random_composition"></p>
-                        <iframe id="random_composition_path" scrolling="no" frameborder="no" width="auto" height="300px" allow="autoplay"></iframe>
-                        <script>document.getElementById("random_composition").innerHTML = randomCompositionTitle;</script><script>document.getElementById("random_composition_path").setAttribute("src", randomCompositionPath);</script>
+                    <br>
+                    <div id="composition">
+                        <h1 id="random_composition_title"></h1>
+                        <p id="random_composition_blurb"></p>
+                        <iframe id="random_composition_path" width="100%" height="352px" scrolling="no" frameborder="no" allow="autoplay"></iframe>
+                        <script>
+                            document.getElementById("random_composition_title").innerHTML = randomCompositionTitle;
+                            document.getElementById("random_composition_blurb").innerHTML = randomCompositionBlurb;
+                            document.getElementById("random_composition_path").setAttribute("src", randomCompositionPath);
+                        </script>
                     </div>
-                    <div class="coding">
-                        <h1>Featured Program</h1>
-                        <p id="random_program"></p>
-                        <a id="random_program_path"><img src="/pictures/coding.jpg" width="auto" height="300px" alt="A Python script"></a>
-                        <script>document.getElementById("random_program").innerHTML = randomProgramTitle;</script><script>document.getElementById("random_program_path").setAttribute("href", randomProgramPath);</script>
+                    <br>
+                    <div id="coding">
+                        <h1 id="random_program_title"></h1>
+                        <p id="random_program_blurb"></p>
+                        <iframe id="random_program_path" width="100%" height="352px" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <script>
+                            document.getElementById("random_program_title").innerHTML = randomProgramTitle;
+                            document.getElementById("random_program_blurb").innerHTML = randomProgramBlurb;
+                            document.getElementById("random_program_path").setAttribute("src", randomProgramPath)
+                        </script>
                     </div>
                 </div>
             </section>

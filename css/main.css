@@ -78,13 +78,17 @@ nav a:hover {
     color: whitesmoke;
 }
 
+#headshot {
+    padding-top: 15px;
+    max-width: 90%;
+    max-height: 352px;
+}
+
 .featured {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 25% 25% 25%;
-    grid-column-gap: 50px;
-    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
+    justify-content: center;
     color: black;
 }
 
@@ -101,8 +105,8 @@ footer {
 #code_container {
     text-align: center;
     color: whitesmoke;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 .title {
@@ -142,19 +146,15 @@ footer {
 }
 
 embed {
-    width: 70%;
+    width: 85%;
     height: 900px;
 }
 
 .paper_holder {
     text-align: center;
     color: whitesmoke;
-    padding-right: 35px;
-    padding-left: 35px;
-}
-
-.paper_holder a {
-    color: black;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
 }
 
 .form_container {
@@ -197,11 +197,6 @@ button:hover {
 
 #title_image {
     max-width: 85%;
-    height: auto;
-}
-
-#headshot {
-    max-width: 90%;
     height: auto;
 }
 
