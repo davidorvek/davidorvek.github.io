@@ -113,7 +113,7 @@ footer {
     color: black;
 }
 
-#composition_holder {
+#composition_container {
     text-align: center;
     padding-left: 7.5%;
     padding-right: 7.5%;
@@ -137,7 +137,7 @@ embed {
     height: 900px;
 }
 
-.paper_holder {
+#paper_container {
     text-align: center;
     color: whitesmoke;
     padding-right: 7.5%;
