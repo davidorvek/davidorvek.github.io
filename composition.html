@@ -15,9 +15,16 @@
                         <li><a href="research.html">Research</a></li>
                         <li><em>Composition</em></li>
                         <li><a href="coding.html">Coding</a></li>
-                        <li><a href="cv.html">CV</a></li>
+                        <li><a id="cv">CV</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <script>if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                            document.getElementById("cv").setAttribute("href", "/CV.pdf");
+                            document.getElementById("cv").setAttribute("download"); 
+                        } else {
+                            document.getElementById("cv").setAttribute("href", "cv.html");
+                        }
+                    </script>
                 </nav>
             </div>
         </header>
