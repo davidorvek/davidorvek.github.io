@@ -4,7 +4,8 @@ $last_name = $_POST["last_name"];
 $email = $_POST["email"];
 $message = $_POST["message"];        
 $email_subject = "New Form Submission";
-$email_body = "You have received an email from $first_name $last_name.
+$email_body = "You have received an email from $first_name $last_name:.
+
 
 $message";
 $to = "davideo23@yahoo.com";
