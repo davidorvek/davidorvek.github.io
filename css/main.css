@@ -95,6 +95,10 @@ nav a:hover {
     justify-content: center;
 }
 
+.featured a {
+    color: whitesmoke;
+}
+
 footer {
     text-align: center;
     font-size: 8pt;

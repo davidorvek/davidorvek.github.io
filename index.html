@@ -50,11 +50,10 @@
                     <div id="research">
                         <h1 id="random_paper_title"></h1>
                         <p id="random_paper_blurb"></p>
-                        <p><a id="random_paper_path">Continue reading</a></p>
                         <script>
                             document.getElementById("random_paper_title").innerHTML = randomPaperTitle;
-                            document.getElementById("random_paper_blurb").innerHTML = randomPaperBlurb;
-                            document.getElementById("random_paper_path").setAttribute("href", randomPaperPath);
+                            document.getElementById("random_paper_blurb").innerHTML = randomPaperBlurb + " <a id='random_paper_path'>(continue reading)</a>";
+                            document.getElementById('random_paper_path').setAttribute("href", randomPaperPath);
                         </script>
                     </div>
                     <br>
@@ -64,7 +63,7 @@
                         <iframe id="random_composition_path" width="100%" height="352px" scrolling="no" frameborder="no" allow="autoplay"></iframe>
                         <script>
                             document.getElementById("random_composition_title").innerHTML = randomCompositionTitle;
-                            document.getElementById("random_composition_blurb").innerHTML = randomCompositionBlurb;
+                            document.getElementById("random_composition_blurb").innerHTML = randomCompositionBlurb + " <a href='composition.html'>(see more compositions)</a>";
                             document.getElementById("random_composition_path").setAttribute("src", randomCompositionPath);
                         </script>
                     </div>
@@ -75,7 +74,7 @@
                         <iframe id="random_program_path" width="100%" height="352px" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                         <script>
                             document.getElementById("random_program_title").innerHTML = randomProgramTitle;
-                            document.getElementById("random_program_blurb").innerHTML = randomProgramBlurb;
+                            document.getElementById("random_program_blurb").innerHTML = randomProgramBlurb + "<br>Click 'Run' to begin. <a href='coding.html'>(see more scripts)</a>";
                             document.getElementById("random_program_path").setAttribute("src", randomProgramPath)
                         </script>
                     </div>
