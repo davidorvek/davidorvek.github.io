@@ -1,19 +1,19 @@
 body {
     background: url("/pictures/stone_background.jpg");
-    background-size: cover;
-    font-family: 'Aldrich';
+    background-size: 100%;
+    font-family: 'Aldrich', monospace;
 }
 
-#coding_body {
-    background: url("/pictures/stone_background.jpg");
-    background-size: 100%;
-    font-family: 'Aldrich';
+body p {
+    color: whitesmoke;
+}
+
+body h {
+    color: black;
 }
 
 header {
     text-align: center;
-    font-family: 'Aldrich';
-    color: whitesmoke;
 }
 
 #name {
@@ -29,7 +29,7 @@ header {
 
 nav li {
     display: inline;
-    padding: 30px;
+    padding: 40px;
     font-size: 15pt;
 }
 
@@ -39,12 +39,17 @@ nav a {
 }
 
 nav a:hover {
-    color: darkgrey;
+    color: dimgrey;
 }
 
-.container {
+#jumbotron {
     text-align: center;
     position: relative;
+}
+
+#title_image {
+    max-width: 85%;
+    height: auto;
 }
 
 #logo {
@@ -61,7 +66,7 @@ nav a:hover {
     font-size: 18pt;
 }
 
-.grid {
+.two_column_grid {
     display: grid;
     width: 100%;
     grid-template-columns: 30% 30%;
@@ -71,7 +76,6 @@ nav a:hover {
 
 #bio {
     text-align: right;
-    color: whitesmoke;
 }
 
 #bio a {
@@ -89,47 +93,17 @@ nav a:hover {
     margin-right: 100px;
     text-align: center;
     justify-content: center;
-    color: black;
-}
-
-.featured p {
-    color: whitesmoke;
 }
 
 footer {
     text-align: center;
     font-size: 8pt;
-    color: whitesmoke;
 }
 
-#code_container {
-    text-align: center;
-    color: whitesmoke;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-}
-
-.title {
-    color: black;
-}
-
-#composition_container {
+.container {
     text-align: center;
     padding-left: 7.5%;
     padding-right: 7.5%;
-}
-
-.composition_titles {
-    color: black;
-    font-size: 20pt;
-}
-
-.composition_descriptions {
-    color: whitesmoke;
-}
-
-#cv_container {
-    text-align: center;
 }
 
 embed {
@@ -137,148 +111,9 @@ embed {
     height: 900px;
 }
 
-#paper_container {
-    text-align: center;
-    color: whitesmoke;
-    padding-right: 7.5%;
-    padding-left: 7.5%;
-}
-
-.form_container {
-    text-align: center;
-}
-
-label {
-    font-size: 10pt;
-}
-
-input, textarea, button {
-    border: 2px solid black;
-}
-
-*:focus {
-    outline: none;
-}
-
-input:focus, textarea:focus, button:focus {
-    background-color: darkgrey;
-}
-
-button:hover {
-    background-color: darkgrey;
-}
-
-
-#in_progress {
-    text-align: center;
-}
-
 .description {
     text-align: center;
-    color: whitesmoke;
     font-size: 15pt;
-}
-
-#title_image {
-    max-width: 85%;
-    height: auto;
-}
-
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-    
-    header {
-        position: relative;
-    }
-    
-    #name {    
-        font-size: 15pt;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    nav li {
-        font-size: 15pt;
-        display: table;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-    
-    #logo h2 {
-        font-size: 12pt;
-    }
-    
-    #logo h4 {
-        font-size: 10pt;
-    }
-    
-    #about {
-        font-size: 13pt;
-    }
-    
-    .grid {
-    grid-template-columns: 42.5% 42.5%;
-    grid-column-gap: 10px;
-    }
-    
-    #bio {
-        font-size: 11pt;
-    }
-    
-    .featured {
-        display: block;
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        color: black;
-    }
-    
-    .featured p {
-        font-size: 11pt;
-    }
-}
-
-@media screen and (min-width: 500px) and (max-width: 749px) {
-    
-    header {
-        position: relative;
-    }
-    
-    #name {    
-        font-size: 12pt;
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-    }
-    nav li {
-        font-size: 12pt;
-        display: table;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-    
-        #logo h2 {
-        font-size: 9pt;
-    }
-    
-    #logo h4 {
-        font-size: 7pt;
-    }
-    
-    #about {
-        font-size: 10pt;
-    }
-    
-    #bio {
-        font-size: 8pt;
-    }
-    
-    .grid {
-        grid-template-columns: 45% 45%;
-        grid-column-gap: 9px;
-    }
 }
 
 @media screen and (min-width: 250px) and (max-width: 499px) {
@@ -301,7 +136,7 @@ button:hover {
         padding-bottom: 3px;
     }
     
-        #logo h2 {
+    #logo h2 {
         font-size: 8pt;
     }
     

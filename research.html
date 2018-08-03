@@ -16,22 +16,14 @@
                         <li><a href="composition.html">Composition</a></li>
                         <li><a href="coding.html">Coding</a></li>
                         <li><a id="cv">CV</a></li>
-                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                    <script>
-                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-                            document.getElementById("cv").setAttribute("href", "/CV.pdf");
-                            document.getElementById("cv").setAttribute("download"); 
-                        } else {
-                            document.getElementById("cv").setAttribute("href", "cv.html");
-                        }
-                    </script>
+                    <script src="/js/check_for_mobile.js"></script>
                 </nav>
             </div>
         </header>
         <hr color="whitesmoke">
         <main>
-            <div id="paper_container">
+            <div class="container">
                 <br>
                 <div id="atonal_close">
                     <h1 class="title">Non-Syntactical Closural Features in Atonal Music by Schoenberg, Webern, and Berg</h1>
