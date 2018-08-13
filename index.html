@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-        <script src="/js/randomizer.js"></script>
         <title>David Orvek</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+        <script src="/js/randomizer.js"></script>
     </head>
     <body>
         <header>
-            <a id="header_name" href="/">David Orvek</a>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a>Research</a></li>
-                    <li><a>Composition</a></li>
-                    <li><a>Performance</a></li>
-                    <li><a>Coding</a></li>
-                    <li><a>CV</a></li>
-                    <li id="right_most"><a>Contact</a></li>
-                </ul>
-            <script src="js/check_for_mobile.js"></script>
+            <div><a id="name" href="index.html"><h1>David Orvek</h1></a></div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><em>Home</em></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="composition.html">Composition</a></li>
+                        <li><a href="coding.html">Coding</a></li>
+                        <li><a id="cv">CV</a></li>
+                    </ul>
+                    <script src="/js/check_for_mobile.js"></script>
+                </nav>
+            </div>
         </header>
-        <section id="title">
-            <div>
-                <h2>David Orvek</h2>
-            </div>
-        </section>
-        <section id="about">
-            <div>
-                <h2>About</h2>
+        <hr color="whitesmoke">
+        <main>
+            <section>
+                <div id="jumbotron">
+                    <img id="title_image" src="/pictures/DSC9415.jpg" alt="David Orvek playing guitar">
+                    <div id="logo">
+                        <h2>David Orvek</h2>
+                        <h4>Music Theorist, Guitarist, Composer</h4>
+                    </div>
+                </div>
+            </section>
+            <hr color="whitesmoke">
+            <section>
+                <div id="about"><h1>About</h1></div>
+                <div class="two_column_grid">
+                    <div id="bio"><p>David Orvek is a music theorist, pedagogue, guitarist, and composer in Columbus, Ohio. He graduated with a bachelor's degree in music theory and literature from Southern Adventist University in 2016, and is currently an MA student in music theory and a graduate teaching associate at The Ohio State University where he teaches first-year music theory and aural skills. His research focuses largely on post-tonal and atonal musics, with a particular interest in transformational theory. Current projects include a study of non-tonal triadic progressions in the music of Charles Villiers Stanford and a corpus study of closural features in the atonal music of Schoenberg, Webern, and Berg.</p><p>In addition to his musical interests, David is also an amateur computer programmer with experience in Python, Bash, Ruby, JavaScript, HTML, CSS, and the Humdrum Toolkit. This website was built from scratch using HTML, CSS, and JavaScript.</p><p><a href="/CV.pdf" download>Full CV</a></p>
+                    </div>
+                    <div><img id="headshot" src="/pictures/DSC9706.jpg" alt="David Orvek headshot"></div>
+                </div>
                 <br>
-                <p>David Orvek is a music theorist, pedagogue, guitarist, and composer in Columbus, Ohio. He graduated with a bachelor's degree in music theory and literature from Southern Adventist University in 2016, and is currently an MA student in music theory and a graduate teaching associate at The Ohio State University where he teaches first-year music theory and aural skills. His research focuses largely on post-tonal and atonal musics, with a particular interest in transformational theory. Current projects include a study of non-tonal triadic progressions in the music of Charles Villiers Stanford and a corpus study of closural features in the atonal music of Schoenberg, Webern, and Berg.</p><p>In addition to his musical interests, David is also an amateur computer programmer with experience in Python, Bash, Ruby, JavaScript, HTML, CSS, and the Humdrum Toolkit. This website was built from scratch using HTML, CSS, and JavaScript.</p><br><div class="button_holder"><button><a href="files/CV.pdf" download>Full CV</a></button></div>
-            </div>
-        </section>
-        <section id="research">
-            <div>
-                <h2 id="random_paper_title"></h2>
-                <p id="random_paper_blurb"></p>
-                <script>
-                    document.getElementById("random_paper_title").innerHTML = randomPaperTitle;
-                    document.getElementById("random_paper_blurb").innerHTML = "<br>" + randomPaperBlurb + "<br><br><div class='button_holder'><button><a id='random_paper_path'>Continue Reading</a></button></div>";
-                    document.getElementById('random_paper_path').setAttribute("href", randomPaperPath);
-                </script>
-            </div>
-        </section>
-        <section id="composition">
-            <div>
-                <h2 id="random_composition_title"></h2>
-                <iframe width="600" height="300" id="random_composition_path" scrolling="no" frameborder="no" allow="autoplay"></iframe>
-                <div class="button_holder"><br><button><a href='composition.html'>More compositions</a></button></div>
-                <script>
-                    document.getElementById("random_composition_title").innerHTML = randomCompositionTitle;
-                    document.getElementById("random_composition_path").setAttribute("src", randomCompositionPath);
-                </script>
-            </div>
-        </section>
-        <section id="performance">
-            <div>
-                <h2>Performance</h2>
-            </div>
-        </section>
-        <section id="coding">
-            <div>
-                <h2>Coding</h2>
-            </div>
-        </section>
-        <footer>
-            <p>&copy; David Orvek 2018 | <a href="mailto:orvek.1@osu.edu">orvek.1@osu.edu</a></p>
-            <br>
-            <a id="linked_in" class="social_media" href="https://www.linkedin.com/in/david-orvek-590b72132" target="_blank"><img src="images/logos/linkedin.png"></a>
-            <a id="twitter" class="social_media" href="https://twitter.com/DavidOrvek" target="_blank"><img src="images/logos/twitter.png"></a>
-            <a id="sound_cloud" class="social_media" href="https://soundcloud.com/david-orvek" target="_blank"><img src="images/logos/soundcloud.png"></a>
-            <br>
-            <br>
-            <p id="license">Icons made by <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> and are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-        </footer>
+            </section>
+            <section>
+                <hr color="whitesmoke">
+                <br>
+                <div class="featured">
+                    <div id="research">
+                        <h1 id="random_paper_title"></h1>
+                        <p id="random_paper_blurb"></p>
+                        <script>
+                            document.getElementById("random_paper_title").innerHTML = randomPaperTitle;
+                            document.getElementById("random_paper_blurb").innerHTML = randomPaperBlurb + " <a id='random_paper_path'>(continue reading)</a>";
+                            document.getElementById('random_paper_path').setAttribute("href", randomPaperPath);
+                        </script>
+                    </div>
+                    <br>
+                    <div id="composition">
+                        <h1 id="random_composition_title"></h1>
+                        <p id="random_composition_blurb"></p>
+                        <iframe id="random_composition_path" width="100%" height="352px" scrolling="no" frameborder="no" allow="autoplay"></iframe>
+                        <script>
+                            document.getElementById("random_composition_title").innerHTML = randomCompositionTitle;
+                            document.getElementById("random_composition_blurb").innerHTML = randomCompositionBlurb + " <a href='composition.html'>(see more compositions)</a>";
+                            document.getElementById("random_composition_path").setAttribute("src", randomCompositionPath);
+                        </script>
+                    </div>
+                    <br>
+                    <div id="coding">
+                        <h1 id="random_program_title"></h1>
+                        <p id="random_program_blurb"></p>
+                        <iframe id="random_program_path" width="100%" height="352px" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <script>
+                            document.getElementById("random_program_title").innerHTML = randomProgramTitle;
+                            document.getElementById("random_program_blurb").innerHTML = randomProgramBlurb + "<br>Click the play button ('Run') to begin. <a href='coding.html'>(see more scripts)</a>";
+                            document.getElementById("random_program_path").setAttribute("src", randomProgramPath)
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <br>
+            <section>
+                <footer>
+                    <p>&copy; David Orvek 2018 | <a href="mailto:orvek.1@osu.edu">orvek.1@osu.edu</a></p>
+                    <a href="https://www.linkedin.com/in/david-orvek-590b72132" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png" target="_blank" width="25px" height="25px"/></a><a href="https://twitter.com/DavidOrvek" target="_blank"><img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" target="_blank" width="25px" height="25px"/></a><iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fdavid-orvek&color=orange_white&size=24" target="_blank" style="width: 25px; height: 25px;"></iframe>
+                </footer>
+            </section>
     </body>
 </html>
