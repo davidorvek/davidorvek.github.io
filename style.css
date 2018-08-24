@@ -269,8 +269,15 @@ footer p {
     }
     
     #title {
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-image: url(/images/stone_background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    #performance_title {
+        background-image: url(/images/DSC9415.jpg);
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
 
