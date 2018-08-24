@@ -267,6 +267,11 @@ footer p {
     #license {
         font-size: 8px;
     }
+    
+    #title {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 #research_title {
