@@ -272,16 +272,6 @@ footer p {
         background-image: url(/images/stone_background.jpg);
         background-size: cover;
         background-attachment: fixed;
-        height: 87vh;
-        width: 100%;
-    }
-    
-    #performance_title {
-        background-image: url(/images/DSC9415.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        height: 87vh;
-        width: 100%;
     }
 }
 
@@ -315,7 +305,7 @@ footer p {
 #performance_title {
     height: 87vh;
     width: auto;
-    background-image: url(/images/DSC9473.jpg);
+    background-image: url(/images/DSC9440.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: white;
