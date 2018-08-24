@@ -1,0 +1,313 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    position: fixed;
+    background-color: transparent;
+    color: white;
+}
+
+.nav .nav_name {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 425px;
+}
+
+.nav a {
+    font-size: 18px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    float: left;
+}
+
+.nav a:hover {
+    color: grey;
+}
+
+.nav .nav_name:hover {
+    color: inherit;
+}
+
+.nav .icon {
+    display: none;
+}
+
+.nav .current_page {
+    color: grey;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 70%;
+    height: auto;
+    text-align: center;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.button_holder {
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px;
+    background-color: black;
+    background-size: cover;
+    color: white;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#title {
+    background-image: url(images/DSC9661_cropped.jpg);
+    background-size: cover;
+    height: 87vh;
+    width: 100%;
+    background-attachment: fixed;
+    color: white;
+}
+
+#about {
+    background-color: white;
+    color: black;
+}
+
+#headshot {
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+}
+
+#research {
+    background-color: #333333;
+    color: white;
+}
+
+#composition {
+    background-color: maroon;
+    color: white;
+}
+
+#coding {
+    background-color: cadetblue;
+    color: white;
+}
+
+#performance {
+    background-color: darksalmon;
+    color: white;
+}
+
+#contact {
+    background-color: dimgray;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+#license {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .nav {
+        background-color: white;
+        color: black;
+    }
+    
+    .nav .hide, .nav .current_page {
+        display: none;
+    }
+    
+    .nav .nav_name {
+        padding-right: 0px;
+        font-weight: bold;
+    }
+    
+    .nav .icon {
+        padding-right: 50px;
+        display: block;
+        float: right;
+    }
+    
+    .responsive_nav {
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        color: black;
+        padding: 15px;
+    }
+    
+    .responsive_nav a {
+        float: none;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+    
+    .responsive_nav a:hover {
+        color: grey;
+    }
+    
+    .responsive_nav .nav_name {
+        font-weight: bold;
+    }
+    
+    .responsive_nav .nav_name:hover {
+        color: inherit;
+    }
+    
+    .responsive_nav .current_page {
+        color: grey;
+    }
+    
+    .responsive_nav .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin: 15px 10px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .nav a {
+        font-size: 12px;
+    }
+    
+    .nav .nav_name {
+        font-size: 12px;
+    }
+    
+    .responsive_nav a {
+        font-size: 12px;    
+    }
+    
+    .section_title {
+        font-size: 30px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+    
+    #headshot {
+        height: 110px;
+    }
+    
+    button {
+        font-size: 13px;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+    
+    #license {
+        font-size: 8px;
+    }
+}
+
+#research_title {
+    background-image: url(/images/research2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87vh;
+    width: auto;
+    color: white;
+}
+
+#composition_title {
+    background-image: url(/images/composition3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87vh;
+    width: auto;
+    color: white;
+}
+
+#code_title {
+    background-image: url(/images/code2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87vh;
+    width: auto;
+    color: white;
+}
+
+#performance_title {
+    height: 87vh;
+    width: auto;
+    background-image: url(/images/DSC9473.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#cv_title {
+    background-color: white;
+    color: black;
+    width: auto;
+    height: 25vh;
+}
