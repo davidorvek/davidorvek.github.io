@@ -162,6 +162,49 @@ footer p {
     font-size: 10px;
 }
 
+#research_title {
+    background-image: url(/images/research2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87vh;
+    width: auto;
+    color: white;
+}
+
+#composition_title {
+    background-image: url(/images/composition3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87vh;
+    width: auto;
+    color: white;
+}
+
+#code_title {
+    background-image: url(/images/code2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87vh;
+    width: auto;
+    color: white;
+}
+
+#performance_title {
+    height: 87vh;
+    width: auto;
+    background-image: url(/images/DSC9473.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#cv_title {
+    background-color: white;
+    color: black;
+    width: auto;
+    height: 25vh;
+}
+
 @media screen and (max-width: 1400px) {
     
     .nav {
@@ -269,51 +312,14 @@ footer p {
     }
     
     #title {
-        background-image: url(/images/stone_background.jpg);
+        background-image: url(/images/DSC9661_mobile.jpg);
         background-size: cover;
         background-attachment: fixed;
     }
-}
-
-#research_title {
-    background-image: url(/images/research2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 87vh;
-    width: auto;
-    color: white;
-}
-
-#composition_title {
-    background-image: url(/images/composition3.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 87vh;
-    width: auto;
-    color: white;
-}
-
-#code_title {
-    background-image: url(/images/code2.png);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 87vh;
-    width: auto;
-    color: white;
-}
-
-#performance_title {
-    height: 87vh;
-    width: auto;
-    background-image: url(/images/DSC9440.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-}
-
-#cv_title {
-    background-color: white;
-    color: black;
-    width: auto;
-    height: 25vh;
+    
+    #performance_title {
+        background-image: url(/images/DSC9473_mobile.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
