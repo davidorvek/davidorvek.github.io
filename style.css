@@ -205,6 +205,14 @@ footer p {
     height: 25vh;
 }
 
+#in_progress_title {
+    background-image: url(/images/stone_background.jpg);
+    background-size: cover;
+    height: 55vh;
+    width: auto;
+    color: white;
+}
+
 @media screen and (max-width: 1400px) {
     
     .nav {
