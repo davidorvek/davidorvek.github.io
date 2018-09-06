@@ -34,5 +34,5 @@ function openNavbar() {
         header.className = "responsive_nav";
     } else if (header.className === "responsive_nav") {
         header.className = "nav";
-    } 
+    }
 };
