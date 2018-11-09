@@ -63,7 +63,7 @@ var programs = {
     "Transposition": ["This is a pitch-class set transposer. The user provides a pitch-class set and a transposition value (n) between 0 and 11 (number of half steps) and the script returns the pitch-class set transposed n half steps heigher.", "https://trinket.io/embed/python3/ca54c9c97c?runOption=run"], 
     "Find Relation": ["This script uses the transposition, inversion, and interval vector scripts to see if two given pitch-class sets map onto each other under any transposition or inversion, or if they are Z-related (share the same interval vector).", "https://trinket.io/embed/python3/5df28dd215?runOption=run"], 
     "Password Generator": ["This script allows you to generate random, highly secure passwords and save them for future reference. Due to the constraints of embedded Python code, saved passwords are erased after the program is quit. If you run the program locally on your own computer, however, Python's <a href='https://docs.python.org/3/library/pickle.html' target='_blank'>Pickle</a> module can be used to save this data to a file and allow you to retrieve it later.", "https://trinket.io/embed/python3/b2658c6368?runOption=run"],
-    "Prime Form Finder": ["This script iterates through all the rotations of the given set and searches through a list of prime forms to find the one that matches. It then returns the Forte number for this set.", "https://trinket.io/embed/python3/77207ae68c?runOption=run"]
+    "Prime Form Finder": ["This script iterates through all the rotations of the given set and searches through a list of prime forms to find the one that matches. It then returns the Forte number for this set.", "https://trinket.io/embed/python3/881bfb0479?runOption=run"]
 };
 
 var programTitles = [
