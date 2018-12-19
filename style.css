@@ -135,6 +135,11 @@ button a {
     color: white;
 }
 
+#random_pcs {
+    background-color: #664466;
+    color: white;
+}
+
 #performance {
     background-color: darksalmon;
     color: white;
