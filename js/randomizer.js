@@ -1907,7 +1907,7 @@ var pcsData = [
     'Index Vector': '(12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12)'}
 ];
 
-var randomSetData = pcsData[Math.floor(Math.random() * (pcsData.length - 1))];
+var randomSetData = pcsData[Math.floor(Math.random() * (pcsData.length))];
 var setClass = randomSetData['Index Number'];
 if (randomSetData['Forte Prime'] == 'SAME') {
     var Prime = randomSetData['Rahn Prime'];
