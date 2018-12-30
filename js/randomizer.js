@@ -2142,7 +2142,7 @@ var intervalVector = randomSetData['Interval Vector'];
 if (randomSetData['Z Partner'] != 'NONE') {
     var zPartner = randomSetData['Z Partner'];
 };
-var intervalString = randomSetData['CINT'];
+var intervalString = randomSetData['String'];
 var degreesSymmetry = randomSetData['Degrees of Symmetry'];
 var transpositionInvariance = randomSetData['Transposition Invariance'];
 var inversionInvariance = randomSetData['Inversion Invariance'];

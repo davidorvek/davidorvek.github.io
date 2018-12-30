@@ -3,4 +3,4 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
     document.getElementById("cv").setAttribute("download"); 
 } else {
     document.getElementById("cv").setAttribute("href", "/html/cv.html");
-}
+};
