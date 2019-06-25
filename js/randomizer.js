@@ -25,7 +25,7 @@ var paperTitles = [
 ];
 
 // generates random title
-var randomPaperTitle = paperTitles[Math.floor(Math.random() * 10 )];
+var randomPaperTitle = paperTitles[Math.floor(Math.random() * paperTitles.length)];
 // uses randomly generated title to retrieve that title's blurb
 var randomPaperBlurb = papers[randomPaperTitle][0];
 // uses randomly gerenerated title to retrieve that title's file path
@@ -50,7 +50,7 @@ var compositionTitles = [
 ];
 
 // generates random title
-var randomCompositionTitle = compositionTitles[Math.floor(Math.random() * 5 )];
+var randomCompositionTitle = compositionTitles[Math.floor(Math.random() * compositionTitles.length)];
 // uses randomly generated title to retrieve that title's blurb
 var randomCompositionBlurb = compositions[randomCompositionTitle][0];
 // uses randomly gerenerated title to retrieve that title's file path
@@ -90,7 +90,7 @@ var programTitles = [
 ];
 
 // generates random title
-var randomProgramTitle = programTitles[Math.floor(Math.random() * 13)];
+var randomProgramTitle = programTitles[Math.floor(Math.random() * programTitles.length)];
 // uses randomly generated title to retrieve that title's blurb
 var randomProgramBlurb = programs[randomProgramTitle][0];
 // uses randomly generated title to retrieve that title's file path
@@ -119,10 +119,17 @@ var performanceTitles = [
 ];
 
 // generates random title
-var randomPerformanceTitle = performanceTitles[Math.floor(Math.random() * 8)];
+var randomPerformanceTitle = performanceTitles[Math.floor(Math.random() * performanceTitles.length)];
 // uses randomly generated title to retrieve that title's file path
 var randomPerformancePath = performances[randomPerformanceTitle];
 
+// generates random background color
+var colorChoices = ['A', 'B', 'C', 'D', 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var color = '';
+for (i = 0; i < 6; i++) {
+    color = color + colorChoices[Math.floor(Math.random() * colorChoices.length)];
+}
+var colorAttribute = 'background-color: #' + color + ';'
 
 var pcsData = [
     {'Index Number': '1-1',
