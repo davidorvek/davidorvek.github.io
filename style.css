@@ -63,7 +63,7 @@ a {
 .container {
     width: 70%;
     height: auto;
-    /*text-align: center;*/
+    text-align: left;
 }
 
 .section_title {
